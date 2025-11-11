@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina Mecânica TurboCar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="./img/image-removebg-preview.png" class="logo" alt="Logo JC Centro Automotivo">
+    <h1>JC Centro Automotivo</h1>
+    
+  </header>
+
+  <main>
+      <section class="controle-pecas container" id="pecas-completo">
+  <div class="heading">
+    <h2>Folha de Orçamento</h2>
+ 
+  </div>
+
+  <form id="controleFormCompleto">
+    <div class="input-row">
+      <label for="cliente">Nome do cliente</label>
+      <input id="cliente" name="cliente" type="text" placeholder="Nome do cliente" required>
+      <label for="carro">Modelo do carro</label>
+    <label for="carro">Carro:</label>
+<input type="text" id="carro" name="carro" placeholder="Digite o modelo do carro" required>
+
+    </div>
+
+    <!-- MOTOR -->
+    <div class="categoria">
+      <h3>Motor</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Bloco do motor"> Bloco do motor</label>
+        <label><input type="checkbox" name="pecas" value="Cabeçote"> Cabeçote</label>
+        <label><input type="checkbox" name="pecas" value="Pistão"> Pistão</label>
+        <label><input type="checkbox" name="pecas" value="Anel de pistão"> Anel de pistão</label>
+        <label><input type="checkbox" name="pecas" value="Biela"> Biela</label>
+        <label><input type="checkbox" name="pecas" value="Virabrequim"> Virabrequim</label>
+        <label><input type="checkbox" name="pecas" value="Cárter"> Cárter</label>
+        <label><input type="checkbox" name="pecas" value="Cabeçote junta"> Junta do cabeçote</label>
+        <label><input type="checkbox" name="pecas" value="Comando de válvulas"> Comando de válvulas</label>
+        <label><input type="checkbox" name="pecas" value="Válvulas"> Válvulas</label>
+        <label><input type="checkbox" name="pecas" value="Assentos de válvula"> Assentos de válvula</label>
+        <label><input type="checkbox" name="pecas" value="Mola de válvula"> Mola de válvula</label>
+        <label><input type="checkbox" name="pecas" value="Tuchos"> Tuchos</label>
+        <label><input type="checkbox" name="pecas" value="Correia dentada"> Correia dentada</label>
+        <label><input type="checkbox" name="pecas" value="Tensor de correia"> Tensor de correia</label>
+        <label><input type="checkbox" name="pecas" value="Cadeia de comando"> Corrente de comando</label>
+        <label><input type="checkbox" name="pecas" value="Polia"> Polia</label>
+        <label><input type="checkbox" name="pecas" value="Balancins"> Balancins</label>
+        <label><input type="checkbox" name="pecas" value="Carenagem do motor"> Carenagem do motor</label>
+      </div>
+    </div>
+
+    <!-- SISTEMA DE ALIMENTAÇÃO / COMBUSTÍVEL -->
+    <div class="categoria">
+      <h3>Sistema de Combustível</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Bomba de combustível"> Bomba de combustível</label>
+        <label><input type="checkbox" name="pecas" value="Filtro de combustível"> Filtro de combustível</label>
+        <label><input type="checkbox" name="pecas" value="Injetores"> Bico injetor / Injetores</label>
+        <label><input type="checkbox" name="pecas" value="Regulador de pressão"> Regulador de pressão</label>
+        <label><input type="checkbox" name="pecas" value="Linha de combustível"> Linha de combustível</label>
+        <label><input type="checkbox" name="pecas" value="Tanque de combustível"> Tanque de combustível</label>
+        <label><input type="checkbox" name="pecas" value="Válvula de retorno"> Válvula de retorno</label>
+      </div>
+    </div>
+
+    <!-- SISTEMA DE IGNIÇÃO -->
+    <div class="categoria">
+      <h3>Sistema de Ignição</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Velas de ignição"> Velas de ignição</label>
+        <label><input type="checkbox" name="pecas" value="Cabos de vela"> Cabos de vela</label>
+        <label><input type="checkbox" name="pecas" value="Bobina de ignição"> Bobina de ignição</label>
+        <label><input type="checkbox" name="pecas" value="Módulo de ignição"> Módulo de ignição</label>
+        <label><input type="checkbox" name="pecas" value="Distribuidor"> Distribuidor</label>
+      </div>
+    </div>
+
+    <!-- SISTEMA DE ARREFECIMENTO -->
+    <div class="categoria">
+      <h3>Sistema de Arrefecimento</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Radiador"> Radiador</label>
+        <label><input type="checkbox" name="pecas" value="Ventoinha"> Ventoinha / Ventilador</label>
+        <label><input type="checkbox" name="pecas" value="Bomba d'água"> Bomba d'água</label>
+        <label><input type="checkbox" name="pecas" value="Termostato"> Termostato</label>
+        <label><input type="checkbox" name="pecas" value="Mangueira do radiador"> Mangueiras do radiador</label>
+        <label><input type="checkbox" name="pecas" value="Reservatório de expansão"> Reservatório de expansão</label>
+        <label><input type="checkbox" name="pecas" value="Sensor de temperatura"> Sensor de temperatura</label>
+      </div>
+    </div>
+
+    <!-- SISTEMA DE LUBRIFICAÇÃO -->
+    <div class="categoria">
+      <h3>Sistema de Lubrificação</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Filtro de óleo"> Filtro de óleo</label>
+        <label><input type="checkbox" name="pecas" value="Bomba de óleo"> Bomba de óleo</label>
+        <label><input type="checkbox" name="pecas" value="Carter"> Carter / Cárter</label>
+        <label><input type="checkbox" name="pecas" value="Grau de óleo"> Óleo do motor (troca)</label>
+      </div>
+    </div>
+
+    <!-- SISTEMA DE ESCAPE -->
+    <div class="categoria">
+      <h3>Sistema de Escape</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Coletor de escape"> Coletor de escape</label>
+        <label><input type="checkbox" name="pecas" value="Catalisador"> Catalisador</label>
+        <label><input type="checkbox" name="pecas" value="Silencioso"> Silencioso / Escape</label>
+        <label><input type="checkbox" name="pecas" value="Sonda lambda"> Sonda lambda / Sensor de O2</label>
+      </div>
+    </div>
+
+    <!-- TRANSMISSÃO -->
+    <div class="categoria">
+      <h3>Transmissão / Embreagem</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Embreagem"> Disco de embreagem / Embreagem</label>
+        <label><input type="checkbox" name="pecas" value="Kit de embreagem"> Kit de embreagem</label>
+        <label><input type="checkbox" name="pecas" value="Platô"> Platô</label>
+        <label><input type="checkbox" name="pecas" value="Rolamento de embreagem"> Rolamento de embreagem</label>
+        <label><input type="checkbox" name="pecas" value="Caixa de câmbio"> Caixa de câmbio</label>
+        <label><input type="checkbox" name="pecas" value="Óleo de câmbio"> Óleo de câmbio</label>
+        <label><input type="checkbox" name="pecas" value="Câmbio automático componentes"> Componentes câmbio automático</label>
+      </div>
+    </div>
+
+    <!-- EIXOS / SEMI-ÁXIS -->
+    <div class="categoria">
+      <h3>Eixos e Transmissão Final</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Semi-eixo"> Semi-eixo</label>
+        <label><input type="checkbox" name="pecas" value="Eixo cardan"> Eixo cardan</label>
+        <label><input type="checkbox" name="pecas" value="Semieixo junta homocinética"> Junta homocinética</label>
+        <label><input type="checkbox" name="pecas" value="Cruzetas"> Cruzeta</label>
+      </div>
+    </div>
+
+    <!-- SUSPENSÃO -->
+    <div class="categoria">
+      <h3>Suspensão</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Amortecedor"> Amortecedor</label>
+        <label><input type="checkbox" name="pecas" value="Mola helicoidal"> Mola helicoidal</label>
+        <label><input type="checkbox" name="pecas" value="Bucha suspensão"> Bucha da suspensão</label>
+        <label><input type="checkbox" name="pecas" value="Braco oscilante"> Braço oscilante</label>
+        <label><input type="checkbox" name="pecas" value="Pivô"> Pivô</label>
+        <label><input type="checkbox" name="pecas" value="Bieleta"> Bieleta / Barra estabilizadora</label>
+      </div>
+    </div>
+
+    <!-- DIREÇÃO -->
+    <div class="categoria">
+      <h3>Direção</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Caixa de direção"> Caixa de direção</label>
+        <label><input type="checkbox" name="pecas" value="Bomba de direção"> Bomba de direção hidráulica</label>
+        <label><input type="checkbox" name="pecas" value="Haste de direção"> Haste / Terminal de direção</label>
+        <label><input type="checkbox" name="pecas" value="Barra de direção"> Barra de direção</label>
+        <label><input type="checkbox" name="pecas" value="Cremera"> Cremalheira</label>
+      </div>
+    </div>
+
+    <!-- FREIOS -->
+    <div class="categoria">
+      <h3>Freios</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Pastilha de freio"> Pastilha de freio</label>
+        <label><input type="checkbox" name="pecas" value="Disco de freio"> Disco de freio</label>
+        <label><input type="checkbox" name="pecas" value="Tambor de freio"> Tambor de freio</label>
+        <label><input type="checkbox" name="pecas" value="Cilindro mestre"> Cilindro mestre</label>
+        <label><input type="checkbox" name="pecas" value="Pinça de freio"> Pinça de freio</label>
+        <label><input type="checkbox" name="pecas" value="Sensor ABS"> Sensor ABS</label>
+        <label><input type="checkbox" name="pecas" value="Flexível de freio"> Flexível de freio</label>
+        <label><input type="checkbox" name="pecas" value="Fluido de freio"> Fluido de freio</label>
+      </div>
+    </div>
+
+    <!-- RODAS / PNEUS -->
+    <div class="categoria">
+      <h3>Rodas e Pneus</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Pneu"> Pneu</label>
+        <label><input type="checkbox" name="pecas" value="Câmara"> Câmara (se aplicável)</label>
+        <label><input type="checkbox" name="pecas" value="Roda / Aro"> Roda / Aro</label>
+        <label><input type="checkbox" name="pecas" value="Parafuso de roda"> Parafuso / Porca de roda</label>
+        <label><input type="checkbox" name="pecas" value="Calota"> Calota / Tampa</label>
+        <label><input type="checkbox" name="pecas" value="Sensor de pressão"> Sensor TPMS / Sensor de pressão</label>
+      </div>
+    </div>
+
+    <!-- ELÉTRICA -->
+    <div class="categoria">
+      <h3>Sistema Elétrico</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Bateria"> Bateria</label>
+        <label><input type="checkbox" name="pecas" value="Alternador"> Alternador</label>
+        <label><input type="checkbox" name="pecas" value="Motor de arranque"> Motor de arranque</label>
+        <label><input type="checkbox" name="pecas" value="Fusível"> Fusível</label>
+        <label><input type="checkbox" name="pecas" value="Relé"> Relé</label>
+        <label><input type="checkbox" name="pecas" value="Chicote"> Chicote / Fiação</label>
+        <label><input type="checkbox" name="pecas" value="Central eletrônica"> Módulo / ECU</label>
+        <label><input type="checkbox" name="pecas" value="Painel de instrumentos"> Painel de instrumentos</label>
+        <label><input type="checkbox" name="pecas" value="Interruptor / botão"> Interruptores / Botões</label>
+      </div>
+    </div>
+
+    <!-- ILUMINAÇÃO -->
+    <div class="categoria">
+      <h3>Iluminação</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Farol dianteiro"> Farol dianteiro</label>
+        <label><input type="checkbox" name="pecas" value="Farol de neblina"> Farol de neblina</label>
+        <label><input type="checkbox" name="pecas" value="Lanterna traseira"> Lanterna traseira</label>
+        <label><input type="checkbox" name="pecas" value="Pisca / Seta"> Pisca / Seta</label>
+        <label><input type="checkbox" name="pecas" value="Lâmpadas"> Lâmpadas</label>
+        <label><input type="checkbox" name="pecas" value="Módulo DRL"> DRL / Luz diurna</label>
+      </div>
+    </div>
+
+    <!-- CARROCERIA -->
+    <div class="categoria">
+      <h3>Carroceria e Estrutura</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Parachoque dianteiro"> Parachoque dianteiro</label>
+        <label><input type="checkbox" name="pecas" value="Parachoque traseiro"> Parachoque traseiro</label>
+        <label><input type="checkbox" name="pecas" value="Capô"> Capô</label>
+        <label><input type="checkbox" name="pecas" value="Tampa traseira"> Tampa traseira / porta-malas</label>
+        <label><input type="checkbox" name="pecas" value="Porta dianteira"> Porta dianteira</label>
+        <label><input type="checkbox" name="pecas" value="Porta traseira"> Porta traseira</label>
+        <label><input type="checkbox" name="pecas" value="Retrovisor"> Retrovisor (lateral)</label>
+        <label><input type="checkbox" name="pecas" value="Retrovisor interno"> Retrovisor interno</label>
+        <label><input type="checkbox" name="pecas" value="Soleira"> Soleira</label>
+      </div>
+    </div>
+
+    <!-- VIDROS -->
+    <div class="categoria">
+      <h3>Vidros e Selantes</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Para-brisa"> Para-brisa</label>
+        <label><input type="checkbox" name="pecas" value="Vidro dianteiro"> Vidro dianteiro lateral</label>
+        <label><input type="checkbox" name="pecas" value="Vidro traseiro"> Vidro traseiro lateral</label>
+        <label><input type="checkbox" name="pecas" value="Máquina de vidro"> Máquina de vidro / motor do vidro</label>
+        <label><input type="checkbox" name="pecas" value="Borracha de vedação"> Borracha de vedação / guarnição</label>
+      </div>
+    </div>
+
+    <!-- INTERIOR -->
+    <div class="categoria">
+      <h3>Interior e Conforto</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Banco dianteiro"> Banco dianteiro</label>
+        <label><input type="checkbox" name="pecas" value="Banco traseiro"> Banco traseiro</label>
+        <label><input type="checkbox" name="pecas" value="Estofamento"> Estofamento / capa</label>
+        <label><input type="checkbox" name="pecas" value="Cinto de segurança"> Cinto de segurança</label>
+        <label><input type="checkbox" name="pecas" value="Airbag"> Airbag</label>
+        <label><input type="checkbox" name="pecas" value="Painel"> Painel central</label>
+        <label><input type="checkbox" name="pecas" value="Volante"> Volante</label>
+        <label><input type="checkbox" name="pecas" value="Alavanca de câmbio"> Alavanca de câmbio</label>
+      </div>
+    </div>
+
+    <!-- HVAC -->
+    <div class="categoria">
+      <h3>Ar Condicionado / Ventilação</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Compressor AC"> Compressor do ar condicionado</label>
+        <label><input type="checkbox" name="pecas" value="Filtro de cabine"> Filtro de cabine / polen</label>
+        <label><input type="checkbox" name="pecas" value="Condensador"> Condensador</label>
+        <label><input type="checkbox" name="pecas" value="Evaporador"> Evaporador</label>
+        <label><input type="checkbox" name="pecas" value="Válvula de expansão"> Válvula de expansão</label>
+      </div>
+    </div>
+
+    <!-- SISTEMA DE SEGURANÇA -->
+    <div class="categoria">
+      <h3>Segurança</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Cinto de segurança dianteiro"> Cinto de segurança dianteiro</label>
+        <label><input type="checkbox" name="pecas" value="Cinto de segurança traseiro"> Cinto de segurança traseiro</label>
+        <label><input type="checkbox" name="pecas" value="Airbag lateral"> Airbag lateral</label>
+        <label><input type="checkbox" name="pecas" value="ABS"> Sistema ABS</label>
+        <label><input type="checkbox" name="pecas" value="TRC"> Controle de tração / estabilidade</label>
+      </div>
+    </div>
+
+    <!-- SENSORES -->
+    <div class="categoria">
+      <h3>Sensores e Atuadores</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Sensor de temperatura"> Sensor de temperatura</label>
+        <label><input type="checkbox" name="pecas" value="Sensor de pressão"> Sensor de pressão de óleo</label>
+        <label><input type="checkbox" name="pecas" value="Sensor MAP"> Sensor MAP</label>
+        <label><input type="checkbox" name="pecas" value="Sensor de rotação"> Sensor de rotação (RPM)</label>
+        <label><input type="checkbox" name="pecas" value="Atuador marcha lenta"> Atuador de marcha lenta</label>
+      </div>
+    </div>
+
+    <!-- JUNTAS, VEDAÇÕES E PEÇAS PEQUENAS -->
+    <div class="categoria">
+      <h3>Juntas, Selos e Peças pequenas</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Junta do cabeçote"> Junta do cabeçote</label>
+        <label><input type="checkbox" name="pecas" value="Retentor do virabrequim"> Retentor do virabrequim</label>
+        <label><input type="checkbox" name="pecas" value="Selo da bomba de água"> Selo / junta bomba d'água</label>
+        <label><input type="checkbox" name="pecas" value="Anéis"> Anéis</label>
+        <label><input type="checkbox" name="pecas" value="Abraçadeira"> Abraçadeira</label>
+        <label><input type="checkbox" name="pecas" value="Parafuso"> Parafuso / Porca / Arruela</label>
+      </div>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="categoria">
+      <h3>Filtros</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Filtro de ar"> Filtro de ar</label>
+        <label><input type="checkbox" name="pecas" value="Filtro de óleo"> Filtro de óleo</label>
+        <label><input type="checkbox" name="pecas" value="Filtro de combustível"> Filtro de combustível</label>
+        <label><input type="checkbox" name="pecas" value="Filtro de cabine"> Filtro de cabine</label>
+      </div>
+    </div>
+
+    <!-- ACESSÓRIOS E PEÇAS DIVERSAS -->
+    <div class="categoria">
+      <h3>Acessórios e Diversos</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Kit de iluminação"> Kit de iluminação</label>
+        <label><input type="checkbox" name="pecas" value="Tapetes"> Tapetes</label>
+        <label><input type="checkbox" name="pecas" value="Rádio / Central multimídia"> Rádio / Central multimídia</label>
+        <label><input type="checkbox" name="pecas" value="Alarme"> Alarme / Sensor de estacionamento</label>
+        <label><input type="checkbox" name="pecas" value="Sensor estacionamento"> Sensor de estacionamento</label>
+      </div>
+    </div>
+
+    <!-- MANUAL / INSPEÇÃO -->
+    <div class="categoria">
+      <h3>Manutenção e Inspeção</h3>
+      <div class="pecas-grid">
+        <label><input type="checkbox" name="pecas" value="Correia acessória"> Correia acessória</label>
+        <label><input type="checkbox" name="pecas" value="Correia dentada troca"> Troca correia dentada</label>
+        <label><input type="checkbox" name="pecas" value="Alinhamento"> Alinhamento</label>
+        <label><input type="checkbox" name="pecas" value="Balanceamento"> Balanceamento</label>
+        <label><input type="checkbox" name="pecas" value="Troca óleo"> Troca de óleo</label>
+      </div>
+    </div>
+
+    <!-- BOTÕES -->
+      <div class="actions">
+          <button type="submit" class="btn-salvar">Salvar Seleção</button>
+          <button type="button" id="verRegistros" class="btn-ver">Ver Registros Salvos</button>
+          
+          <button type="button" id="limparRegistros" class="btn-limpar">Limpar Histórico</button>
+        </div>
+  </form>
+
+  <div id="resultado" class="resultado"></div>
+  <div id="registrosSalvos" class="registros"></div>
+</section>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 JC Centro Automotivo</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
